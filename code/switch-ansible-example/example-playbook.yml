@@ -1,0 +1,12 @@
+---
+- hosts: switches
+  gather_facts: no
+  connection: local
+  tasks:
+  - name: config
+    ios_command:
+      commands:
+        - conf t
+        - int F0/1
+        - no shut
+  

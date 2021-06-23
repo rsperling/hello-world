@@ -1,0 +1,17 @@
+---
+# switch config file
+switches:
+  "0":
+    name: switch0
+    type: cisco_ios
+    address: devops-workshop.quokka.one
+    port: 2200
+    username: root
+    password: root
+  "1":
+    name: switch1
+    type: cisco_ios
+    address: devops-workshop.quokka.one
+    port: 2201
+    username: root
+    password: root

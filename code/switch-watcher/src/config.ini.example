@@ -1,0 +1,20 @@
+# config.ini
+
+# SMTP server info
+[SMTP Info]
+server      : smtp-relay.foo.bar
+port        : 587
+username    : user@foo.bar
+password    : xxxxxxxxxxxxxxxxx
+
+# mailer info
+[Mailer Info]
+from        : user@foo.bar
+to          : user@foo.bar
+cc          : user1@foo.bar,user2@foo.bar
+bcc         : user3@foo.bar,user4@foo.bar
+
+# message details
+[Message Info]
+subject     : switch configuration comparison report
+

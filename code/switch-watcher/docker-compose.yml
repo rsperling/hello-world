@@ -1,0 +1,7 @@
+version: "3"
+services:
+  switch-watch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped

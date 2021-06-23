@@ -1,0 +1,24 @@
+[all:vars]
+# these defaults can be overridden for any group in the [group:vars] section
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_common_args='-o deprecation_warnings=False'
+
+[switches]
+switch1 ansible_port=2201 ansible_host=devops-workshop.quokka.one
+switch2 ansible_port=2202 ansible_host=devops-workshop.quokka.one
+switch3 ansible_port=2203 ansible_host=devops-workshop.quokka.one
+switch4 ansible_port=2204 ansible_host=devops-workshop.quokka.one
+switch5 ansible_port=2205 ansible_host=devops-workshop.quokka.one
+switch6 ansible_port=2206 ansible_host=devops-workshop.quokka.one
+switch7 ansible_port=2207 ansible_host=devops-workshop.quokka.one
+switch8 ansible_port=2208 ansible_host=devops-workshop.quokka.one
+switch9 ansible_port=2209 ansible_host=devops-workshop.quokka.one
+switch10 ansible_port=2210 ansible_host=devops-workshop.quokka.one
+
+[switches:vars]
+ansible_become=yes
+ansible_become_method=enable
+ansible_network_os=cisco.ios.ios
+ansible_user=root
+ansible_password=root
+ansible_ssh_pass=root
